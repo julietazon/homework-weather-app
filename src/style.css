@@ -53,6 +53,7 @@ li:first-letter {
 
 .weather-temperature img {
   margin-right: 5px;
+  margin-top:5px;
   height: 64px;
   width: 64px;
 }
@@ -109,8 +110,6 @@ li:first-letter {
   line-height: 15px;
   white-space: nowrap;
 }
-
-
 
 .temp-properties {
   margin-top: 10px;
