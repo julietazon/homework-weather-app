@@ -20,36 +20,49 @@
         <form id="search-form" class="mb-3">
           <div class="row">
             <div class="col-9">
-              <input type="search" placeholder="Type a city.." class="form-control" id="city-input"
-                autocomplete="off" />
+              <!-- setting the margin bottom of the seach template -->
+              <input type="search" 
+              placeholder="Type a city" 
+              class="form-control" 
+              id="city-input"
+              autocomplete="off" />
             </div>
             <div class="col-3">
-              <input type="submit" value="Search" class="btn btn-primary w-100" />
+              <!-- setting the width of the button with w- -->
+              <input type="submit" 
+              value="Search" 
+              class="btn btn-primary w-100" />
             </div>
           </div>
         </form>
         <div class="overview">
           <h1 id="city"></h1>
           <ul>
-            <li>Last updated: <span id="date"></span></li>
-            <li id="description"></li>
+            <li class="main-properties">Last updated: <span id="date" class="main-properties"></span></li>
+            <li id="description" class="main-properties"></li>
           </ul>
         </div>
+
         <div class="row">
           <div class="col-6">
             <div class="clearfix weather-temperature">
-              <img src="" alt="Clear" id="icon" class="float-left" />
-              <div class="float-left">
-                <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link"
+              <img src="" 
+              alt="weather icon" id="main-temp-icon" 
+              class="float-left" />
+              <div class="float-left main-weather">
+                <span id="temperature" class="main-temp"></span>
+                <span class="units">
+                  <a href="#" id="celsius-link"
                     class="active">°C</a> |
                   <a href="#" id="fahrenheit-link">°F</a></span>
               </div>
             </div>
           </div>
+
           <div class="col-6">
-            <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
+            <ul class="temp-properties">
+              <li>Humidity: <span id="humidity-value"></span>%</li>
+              <li>Wind: <span id="speed-value"></span> km/h</li>
             </ul>
           </div>
         </div>
